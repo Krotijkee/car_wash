@@ -1,0 +1,12 @@
+{% extends "car_wash/wrapper.html" %}
+{% block content %}
+{% load staticfiles %}
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=abbd4541-99ff-4eb4-86a2-a8e6c8c82f84" type="text/javascript"></script>
+    <script src="{% static 'js/placemark_2.js' %}" type="text/javascript" ></script>
+    <style>
+        #map {
+            width: 250px; height: 250px; padding: 5px; margin: 0;
+        }
+    </style>
+<div id="map"></div>
+{% endblock %}
