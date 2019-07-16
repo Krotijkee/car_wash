@@ -11,18 +11,26 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="{% static 'css/custom-style.css' %}">
     <style>
-
         html { height: 100%; }
         body {
             min-height:100%;
             position:relative;
-            padding-bottom: 70px;}
+            padding-bottom: 70px;
+            background-color:#e2e6dd;
+        }
         .footer {
             position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
             height: 40px;}
+        a:focus{
+            background: #17a2b8!important;
+        }
+        .dropdown-menu > a:hover{
+            background: black;
+            color: #fffff1;
+        }
     </style>
 
     <title>"Фрегат" Добро пожаловать!</title>
@@ -39,49 +47,48 @@
     </div>
 
     <!-- navbar menu -->
-    <div class="navbar navbar-expand-md bg-warning shadow shadow-normal">
+    <div class="navbar navbar-expand-md shadow shadow-normal" style="background-color: #fffff1">
         <div class="collapse navbar-collapse justify-content-center" >
             <ul class="navbar-nav  text-center">
                 <li class="nav-item ">
-                    <a class="nav-link text-dark" href="#">ГЛАВНАЯ <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-dark rounded" href="../home">ГЛАВНАЯ <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-dark" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">О КОМПАНИИ</a>
-                    <div class="dropdown-menu bg-info" aria-labelledby="dropdown01">
-                        <a class="dropdown-item " href="reviews">ОТЗЫВЫ</a>
-                        <a class="dropdown-item " href="#">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a>
-                        <a class="dropdown-item" href="#">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
-                        <a class="dropdown-item" href="#">РЕСО ГАРАНТИЯ</a>
+                    <a class="nav-link text-dark rounded" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">О КОМПАНИИ</a>
+                    <div class="dropdown-menu bg-info rounded" aria-labelledby="dropdown01">
+                        <a class="dropdown-item text-white rounded" href="../reviews">ОТЗЫВЫ</a>
+                        <a class="dropdown-item text-white rounded" href="../license">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a>
+                        <a class="dropdown-item text-white rounded" href="../clients">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-dark" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">АВТОМОЙКА</a>
-                    <div class="dropdown-menu bg-info" aria-labelledby="dropdown02">
-                        <a class="dropdown-item " href="#">БЕСКОНТАКТНАЯ МОЙКА</a>
-                        <a class="dropdown-item " href="#">НАНО-МОЙКА</a>
-                        <a class="dropdown-item" href="#">ХИМЧИСТКА</a>
-                        <a class="dropdown-item" href="#">АВТОМОЙКА ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">УСЛУГИ И ЦЕНЫ</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-dark" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ГАЛЕРЕЯ</a>
-                    <div class="dropdown-menu bg-info" aria-labelledby="dropdown03">
-                        <a class="dropdown-item" href="#">ГАЛЕРЕЯ 1</a>
-                        <a class="dropdown-item" href="#">ГАЛЕРЕЯ 2</a>
-                        <a class="dropdown-item" href="#">ГАЛЕРЕЯ 3</a>
+                    <a class="nav-link text-dark rounded" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">АВТОМОЙКА</a>
+                    <div class="dropdown-menu bg-info rounded" aria-labelledby="dropdown02">
+                        <a class="dropdown-item rounded" href="#">БЕСКОНТАКТНАЯ МОЙКА</a>
+                        <a class="dropdown-item rounded" href="#">НАНО-МОЙКА</a>
+                        <a class="dropdown-item rounded" href="#">ХИМЧИСТКА</a>
+                        <a class="dropdown-item rounded" href="#">АВТОМОЙКА ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">АКЦИИ</a>
+                    <a class="nav-link text-dark rounded" href="#">УСЛУГИ И ЦЕНЫ</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-dark" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">КОНТАКТЫ</a>
-                    <div class="dropdown-menu bg-info" aria-labelledby="dropdown04">
-                        <a class="dropdown-item " href="#">ул.Сибирская 79б</a>
-                        <a class="dropdown-item " href="#">пер.Луговой 16</a>
+                    <a class="nav-link text-dark rounded" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ГАЛЕРЕЯ</a>
+                    <div class="dropdown-menu bg-info rounded" aria-labelledby="dropdown03">
+                        <a class="dropdown-item rounded" href="#">ГАЛЕРЕЯ 1</a>
+                        <a class="dropdown-item rounded" href="#">ГАЛЕРЕЯ 2</a>
+                        <a class="dropdown-item rounded" href="#">ГАЛЕРЕЯ 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark rounded" href="#">АКЦИИ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-dark rounded" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">КОНТАКТЫ</a>
+                    <div class="dropdown-menu bg-info rounded" aria-labelledby="dropdown04">
+                        <a class="dropdown-item rounded" href="/contact_1/sib79.html">ул.Сибирская 79 б</a>
+                        <a class="dropdown-item rounded" href="../contact_1/lug16.html">пер.Луговой 16</a>
                     </div>
                 </li>
             </ul>

@@ -2,8 +2,5 @@
     background-image: url("../images/Top.jpg");
 
 }
-.navbar-default .navbar .collapse .navbar-nav .navbar-item > li > a:hover, .navbar-default .navbar .collapse .navbar-nav .navbar-item> li > a:focus {
-    background-color: blueviolet !important;
-    color: blue !important;
-}
+
 
