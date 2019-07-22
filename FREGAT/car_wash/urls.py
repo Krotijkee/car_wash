@@ -7,5 +7,11 @@ urlpatterns = [
     path('reviews', views.reviews),
     path('home', views.home),
     path('license', views.license),
-    path('clients', views.clients)
+    path('clients', views.clients),
+    path('w-contact', views.w_contact),
+    path('nano', views.nano),
+    path('chemical', views.chemical),
+    path('price', views.price),
+    path('actions', views.actions),
+    path('gruzovik', views.gruzovik)
 ]

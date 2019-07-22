@@ -33,62 +33,70 @@
         }
     </style>
 
-    <title>"Фрегат" Добро пожаловать!</title>
+    <title>Автомойка в Томске "Фрегат"</title>
   </head>
   <body>
     <!-- Вконтакте лого -->
-    <div class=" jumbotron big-banner d-flex  align-items-center  mb-0 rounded-0">
-        <a href="https://vk.com/public183623649" class="vk-ico">
-            <img src="{% static 'images/insta_icon.PNG' %}" class="rounded mb-3" title="Мы в Instagram">
-            <p>
-                <img src="{% static 'images/vk_icon.PNG' %}" class="rounded" title="Мы Вконтакте">
-            </p>
-        </a>
+    <div class="jumbotron big-banner d-flex pt-0 mb-0 rounded-0">
+        <div class="colM">
+            <div class="col-12">
+                <img style="height: 250px;margin-left: 6%" src="{% static 'images/fregat_logo1.PNG' %}">
+            </div>
+            <!--
+            <div class="pl-5">
+                <a href="https://vk.com/public183623649" class="row vk-ico" style="margin-left: 15%">
+                    <img src="{% static 'images/insta_icon.PNG' %}" class="rounded" title="Мы в Instagram">
+                    <p>
+                        <img src="{% static 'images/vk_icon.PNG' %}" class="rounded ml-3" title="Мы Вконтакте">
+                    </p>
+                </a>
+            </div>
+            -->
+        </div>
     </div>
 
     <!-- navbar menu -->
-    <div class="navbar navbar-expand-md shadow shadow-normal" style="background-color: #fffff1">
+    <div class="navbar navbar-expand-md bg-dark shadow shadow-normal">
         <div class="collapse navbar-collapse justify-content-center" >
             <ul class="navbar-nav  text-center">
                 <li class="nav-item ">
-                    <a class="nav-link text-dark rounded" href="../home">ГЛАВНАЯ <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white rounded-lg" href="../home">ГЛАВНАЯ</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-dark rounded" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">О КОМПАНИИ</a>
-                    <div class="dropdown-menu bg-info rounded" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-white rounded" href="../reviews">ОТЗЫВЫ</a>
-                        <a class="dropdown-item text-white rounded" href="../license">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a>
-                        <a class="dropdown-item text-white rounded" href="../clients">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
+                    <a class="nav-link text-white rounded-lg" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">О КОМПАНИИ</a>
+                    <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown01">
+                        <a class="dropdown-item text-white rounded-lg" href="../reviews">ОТЗЫВЫ</a>
+                        <a class="dropdown-item text-white rounded-lg" href="../license">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a>
+                        <a class="dropdown-item text-white rounded-lg" href="../clients">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-dark rounded" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">АВТОМОЙКА</a>
-                    <div class="dropdown-menu bg-info rounded" aria-labelledby="dropdown02">
-                        <a class="dropdown-item rounded" href="#">БЕСКОНТАКТНАЯ МОЙКА</a>
-                        <a class="dropdown-item rounded" href="#">НАНО-МОЙКА</a>
-                        <a class="dropdown-item rounded" href="#">ХИМЧИСТКА</a>
-                        <a class="dropdown-item rounded" href="#">АВТОМОЙКА ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark rounded" href="#">УСЛУГИ И ЦЕНЫ</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-dark rounded" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ГАЛЕРЕЯ</a>
-                    <div class="dropdown-menu bg-info rounded" aria-labelledby="dropdown03">
-                        <a class="dropdown-item rounded" href="#">ГАЛЕРЕЯ 1</a>
-                        <a class="dropdown-item rounded" href="#">ГАЛЕРЕЯ 2</a>
-                        <a class="dropdown-item rounded" href="#">ГАЛЕРЕЯ 3</a>
+                    <a class="nav-link text-white rounded-lg" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">АВТОМОЙКА</a>
+                    <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown02">
+                        <a class="dropdown-item rounded-lg text-white" href="../w-contact">БЕСКОНТАКТНАЯ МОЙКА</a>
+                        <a class="dropdown-item rounded-lg text-white" href="../nano">НАНО-МОЙКА</a>
+                        <a class="dropdown-item rounded-lg text-white" href="../chemical">ХИМЧИСТКА</a>
+                        <a class="dropdown-item rounded-lg text-white" href="../gruzovik">АВТОМОЙКА ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark rounded" href="#">АКЦИИ</a>
+                    <a class="nav-link text-white rounded-lg" href="../price">УСЛУГИ И ЦЕНЫ</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-dark rounded" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">КОНТАКТЫ</a>
-                    <div class="dropdown-menu bg-info rounded" aria-labelledby="dropdown04">
-                        <a class="dropdown-item rounded" href="/contact_1/sib79.html">ул.Сибирская 79 б</a>
-                        <a class="dropdown-item rounded" href="../contact_1/lug16.html">пер.Луговой 16</a>
+                    <a class="nav-link text-white rounded-lg " href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ГАЛЕРЕЯ</a>
+                    <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown03">
+                        <a class="dropdown-item rounded-lg text-white" href="#">ГАЛЕРЕЯ 1</a>
+                        <a class="dropdown-item rounded-lg text-white" href="#">ГАЛЕРЕЯ 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white rounded-lg" href="../actions">АКЦИИ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white rounded-lg" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">КОНТАКТЫ</a>
+                    <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown04">
+                        <a class="dropdown-item rounded-lg text-white" href="/contact_1/sib79.html">ул.Сибирская 79 б</a>
+                        <a class="dropdown-item rounded-lg text-white" href="../contact_1/lug16.html">пер.Луговой 16</a>
                     </div>
                 </li>
             </ul>

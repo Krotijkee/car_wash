@@ -1,0 +1,39 @@
+{% extends "car_wash/wrapper.html" %}
+{% block content %}
+
+<div class="container mt-5" style="width: 100%">
+    <div class="container">
+<!-- paht -->
+       <div class="row">
+           <div class="span12" >
+               <section class="title-section">
+                   <h1 class="pb-3">БЕСКОНТАКТНАЯ АВТОМОЙКА</h1>
+               <!-- BEGIN BREADCRUMBS-->
+                   <div class="" style="width: 58%">
+                       <ul class="breadcrumb breadcrumb__t shadow shadow-lg" style="font-size: 12px;background-color: #e2e6dd;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">АВТОМОЙКА</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="/w-contact"> БЕСКОНТАКТНАЯ МОЙКА </a></li></ul>			<!-- END BREADCRUMBS -->
+                   </div>
+               </section><!-- .title-section -->
+           </div>
+       </div>
+    </div>
+    <div class="container" >
+        <div class="row ">
+            <div class="col">
+                <div class="span8 ">&nbsp;<p></p>
+                <p class="more" style="font-size: larger; font-style: italic">Бесконтактная автомойка завоевала популярность благодаря важному преимуществу – качественной и бережной очистке кузова автомобиля.<br>
+                В процессе мойки не используются материалы, трущие о поверхность кузова. Загрязнения размягчаются пенными составами, а затем смываются водой под большим давлением. Технология обеспечивает максимально качественное и безопасное очищение лакокрасочных поверхностей, пластмассовых и хромированных элементов кузова автомобиля.<br>
+                Для размягчения грязи используются автошампуни и специальное оборудование – пеногенератор. Пена наносится на кузов автомобиля. Через несколько минут с помощью аппарата высокого давления она вместе с загрязнением смывается водой. Кузов и все его элементы просушиваются с помощью протирочных материалов. Стекла натираются до блеска.</p>
+                <p><a class="btn btn-info btn-lg"  href="#" role="button">Посмотреть цены »</a></p>
+                </div>
+            </div>
+            <div class="col mt-5">
+                {% load staticfiles %}
+                <img class="rounded-lg" src="{% static 'images/w_contact.PNG' %}" title="photo">
+                <p class="more mt-3"><strong>Если вы хотите ощутить все плюсы бесконтактной автомойки, цена которой доступна, приезжайте в нашу автомойку «Фрегат»! У нас работают ответственные мастера. Мы используем качественную автохимию. Регулярно проводим акции и предлагаем скидки. Работаем для вас ежедневно с 8.00 до 22.00.
+                    Стоимость бесконтактной мойки у нас доступна. Сохранность лакокрасочного покрытия и свежий внешний вид вашего автомобиля окупают ее сполна.</strong></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

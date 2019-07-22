@@ -1,0 +1,44 @@
+{% extends "car_wash/wrapper.html" %}
+{% block content %}
+
+<div>
+    <div class="container mt-5" style="width: 100%">
+    <!-- paht -->
+       <div class="row">
+           <div class="span12" >
+               <section class="title-section">
+                   <h1 class="pb-3">АВТОМОЙКА ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</h1>
+               <!-- BEGIN BREADCRUMBS-->
+                   <div class="" style="width: 52%">
+                       <ul class="breadcrumb breadcrumb__t shadow shadow-lg" style="font-size: 12px;background-color: #e2e6dd;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">АВТОМОЙКА</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="../gruzovik"> АВТОМОЙКА ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ </a></li></ul>
+                       <!-- END BREADCRUMBS -->
+                   </div>
+               </section><!-- .title-section -->
+           </div>
+       </div>
+       <div class="">
+           <div class="row ">
+                <div class="col-5">&nbsp;<p></p>
+                    <p class="more" style="font-size: 21px"><em>Автомойка для грузовых машин – достаточно редкое явление даже в больших городах. Мы предлагаем эту услугу наряду с мойкой легковых авто. Наши работники знают все тонкости этого процесса, и могут правильно и качественно вымыть грузовые авто – от грузовых микроавтобусов до тягачей с фурами.
+                        Автомойка для грузовиков имеет свои особенности. Большой размер машин требует использования соответствующего оборудования. Работа с ним, в свою очередь, требует квалификации мастеров. Кроме размера машин, особенности такой мойки связаны с наличием тентованных поверхностей, систем вентиляции и т.д. у грузовиков. Все это – опыт сотрудников и современное оборудование – сочетает в себе «Фрегат».</em></p>
+                </div>
+               {% load staticfiles %}
+               <img class="mt-5 rounded-lg shadow shadow-lg" style="margin-bottom: 100px;width:55%" src="{% static 'images/gruzovik.PNG' %}">
+                </div><!-- .row (end) -->
+                <div class="row ">
+                    <div class="content_box  ">
+                        <h2 class="mb-4">Цены грузовой автомойки</h2>
+                        <p class="more" style="font-style: italic; font-size: 20px"><em>Мы придерживаемся принципа доступных цен за качественные услуги. Стоимость мойки грузового автомобиля зависит от его размеров. Уточнить ее вы можете на месте или по телефону, а также в разделе сайта «Услуги и цены».<br>
+                            Мы проводим акции и предлагаем скидки постоянным и новым клиентам нашей грузовой автомойки. Узнать об актуальных предложениях вы также можете на нашем сайте.</em></p>
+                        <p class="more" style="font-style: italic; font-size: 20px"><em><strong>Если вам нужна грузовая автомойка в Томске, приезжайте к нам!</strong></em></p>
+                        <div class="clear"></div>
+                    </div><!-- .content_box (end) -->
+                    <a href="../price" title="Цены" class="btn btn-info btn-lg btn-inline " target="_self">Ознакомиться с ценами »</a><!-- .btn -->
+                </div><!-- .row (end) -->
+		        <div class="clear"></div>
+                <!--.pagination-->
+           </div>
+       </div>
+    </div>
+</section>
+{% endblock %}
