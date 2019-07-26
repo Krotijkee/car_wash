@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path,include
 from . import views
 
 urlpatterns = [
@@ -13,5 +13,8 @@ urlpatterns = [
     path('chemical', views.chemical),
     path('price', views.price),
     path('actions', views.actions),
-    path('gruzovik', views.gruzovik)
+    path('gruzovik', views.gruzovik),
+    path('gallery/<str:loc>', views.gallery),
+    path('main_get', views.main_get, name='main_get')
+
 ]

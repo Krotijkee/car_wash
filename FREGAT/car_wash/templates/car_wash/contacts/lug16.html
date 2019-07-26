@@ -1,12 +1,50 @@
 {% extends "car_wash/wrapper.html" %}
 {% block content %}
-{% load staticfiles %}
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=abbd4541-99ff-4eb4-86a2-a8e6c8c82f84" type="text/javascript"></script>
-    <script src="{% static 'js/placemark_2.js' %}" type="text/javascript" ></script>
-    <style>
-        #map {
-            width: 250px; height: 250px; padding: 5px; margin: 0;
-        }
-    </style>
-<div id="map"></div>
+    <div class="container mt-5" style="width: 100%">
+        <div class="container">
+        <!-- paht -->
+           <div class="row">
+               <div class="span12" >
+                   <section class="title-section">
+                       <h1 class="pb-3">КОНТАКТЫ</h1>
+                   <!-- BEGIN BREADCRUMBS-->
+                       <div class="" style="width: 100%">
+                           <ul class="breadcrumb breadcrumb__t shadow shadow-lg" style="font-size: 12px;background-color: #e2e6dd;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">КОНТАКТЫ</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="/contact_1/lug16.html"> ЛУГОВОЙ 16 </a></li></ul>			<!-- END BREADCRUMBS -->
+                       </div>
+                   </section><!-- .title-section -->
+               </div>
+           </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-4"><h3 class="mb-5">Контактная информация</h3>
+                <h4>Режим работы</h4>
+                <p style="font-size: 20px">Автомойка работает c 08.00 до 22.00. Любые работы проводятся в удобное для вас время. Вы можете оплатить как наличными так и картой. Для более комфортного ожидания мы приготовили бесплатное кофе,угощение и бесплатный WiFi.
+                По любым вопросам мы готовы ответить вам по телефону.<br>
+                Ждем Вас на автомойке "Фрегат".
+                </p><address style="font-size: 20px">
+                <strong >г.Томск<br>
+                пер. Луговой 16<br>
+                </strong><br>
+                    <p style="font-size: 20px;">Телефон: +7 (3822) 23 09 09</p><br>
+                 <!---
+                    E-mail: <a href=""></a>
+                    -->
+                    <br>
+                </address><!-- address (end) -->
+            </div>
+            <div class="span8 shadow shadow-lg rounded rounded-lg border border-dark">
+                {% load staticfiles %}
+                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=abbd4541-99ff-4eb4-86a2-a8e6c8c82f84" type="text/javascript"></script>
+                <script src="{% static 'js/placemark_2.js' %}" type="text/javascript" ></script>
+                <style>
+                    #map {
+                        width: 750px; height: 650px; padding: 5px; margin: 0;
+                    }
+                </style>
+            <div id="map"></div>
+            </div>
+        </div>
+
+
+    </div>
 {% endblock %}

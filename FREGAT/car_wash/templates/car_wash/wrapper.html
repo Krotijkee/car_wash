@@ -85,8 +85,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link text-white rounded-lg " href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ГАЛЕРЕЯ</a>
                     <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown03">
-                        <a class="dropdown-item rounded-lg text-white" href="#">ГАЛЕРЕЯ 1</a>
-                        <a class="dropdown-item rounded-lg text-white" href="#">ГАЛЕРЕЯ 2</a>
+                        <a class="dropdown-item rounded-lg text-white" href="../gallery/gallery_1.html">ГАЛЕРЕЯ 1</a>
+                        <a class="dropdown-item rounded-lg text-white" href="../gallery/gallery_2.html">ГАЛЕРЕЯ 2</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -97,6 +97,8 @@
                     <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown04">
                         <a class="dropdown-item rounded-lg text-white" href="/contact_1/sib79.html">ул.Сибирская 79 б</a>
                         <a class="dropdown-item rounded-lg text-white" href="../contact_1/lug16.html">пер.Луговой 16</a>
+                        <!--feedback button -->
+                        <a class="dropdown-item rounded-lg " data-toggle="modal" href="#exampleModal">ОБРАТНАЯ СВЯЗЬ</a>
                     </div>
                 </li>
             </ul>
@@ -106,6 +108,53 @@
     {% block content %}
     {% endblock %}
 
+
+
+    <!--feedback -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Оставьте отзыв</h5>
+                    <button type="button" id="modal_close_btn" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" action="" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input id="name" class="form-control" name="name" required type="text" placeholder="Иван">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Ваш E-mail:</label>
+                            <input id="email" class="form-control" name="email" required type="text" placeholder="ivanov@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Ваш телефон:</label>
+                            <input id="phone" class="form-control" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Текст сообщения:</label>
+                            <textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input id="check" class="form-check-input" checked type="checkbox">
+                            <label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
+                        </div>
+                        <button id="button" class="btn btn-success" type="submit">Отправить</button>
+                        <div class="result">
+                            <span id="answer"></span>
+                            <span id="loader" style="display:none"><img src="{% static 'images/loader.gif' %}" alt=""></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
     <footer class="footer bg-dark text-white">
         <div class="container" style="border-top-width: 0px; margin-left: 20px;">
             <div class="row">
@@ -117,13 +166,20 @@
             </div>
         </div>
     </footer>
-  <!-- Bootstrap JQUERY -->
+    <!-- Bootstrap JQUERY -->
+    <!-- урезанная версия jquery --
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-  <!-- Bootstrap JS -->
+    --->
+    <!-- Подключение полной версии jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!-- Маска для номера телефона -->
+    <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
+    <!-- Инициализация и Ajax-запрос -->
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 
 </html>

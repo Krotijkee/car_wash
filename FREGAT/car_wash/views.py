@@ -1,4 +1,8 @@
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
 
 
 def home(request):
@@ -42,3 +46,47 @@ def price(request):
 def actions(request):
     return render(request, "car_wash/actions/actions.html")
 
+#gallery package
+
+def gallery(request, loc):
+    return render(request, "car_wash/gallery/{}".format(loc))
+
+#handler
+def main_get(request):
+
+    if request.POST:
+
+        # create message object instance
+        msg = MIMEMultipart()
+
+        message = request.POST["message"]
+
+        # setup the parameters of the message
+        password = "fregat"
+        msg['From'] = "fregatwasher@yandex.ru"
+        msg['To'] = "fregatwasher@yandex.ru"
+        msg['Subject'] = "Обратная связь"
+
+        # add in the message body
+        msg.attach(MIMEText(message, 'plain'))
+
+        # create server
+        server = smtplib.SMTP('smtp.yandex.ru: 587')
+
+        server.starttls()
+
+        # Login Credentials for sending the mail
+        server.login(msg['From'], password)
+
+        # send the message via the server.
+        server.sendmail(msg['From'], msg['To'], msg.as_string())
+
+        server.quit()
+
+        print
+        "successfully sent email to %s:" % (msg['To'])
+        return HttpResponse('Ваше сообщение отправлено')
+
+
+    else:
+        return HttpResponse('Ошибка')
