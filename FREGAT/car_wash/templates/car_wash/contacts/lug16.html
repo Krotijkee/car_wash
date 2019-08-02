@@ -1,6 +1,6 @@
 {% extends "car_wash/wrapper.html" %}
 {% block content %}
-    <div class="container mt-5" style="width: 100%">
+    <div class="container pt-5 pb-5" style="width: 100%">
         <div class="container">
         <!-- paht -->
            <div class="row">
@@ -24,21 +24,24 @@
                 </p><address style="font-size: 20px">
                 <strong >г.Томск<br>
                 пер. Луговой 16<br>
-                </strong><br>
+                <br>
                     <p style="font-size: 20px;">Телефон: +7 (3822) 23 09 09</p><br>
+                </strong>
                  <!---
                     E-mail: <a href=""></a>
                     -->
                     <br>
                 </address><!-- address (end) -->
             </div>
-            <div class="span8 shadow shadow-lg rounded rounded-lg border border-dark">
+            <!-- map -->
+            <div class="span8 shadow shadow-lg" >
                 {% load staticfiles %}
                 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=abbd4541-99ff-4eb4-86a2-a8e6c8c82f84" type="text/javascript"></script>
                 <script src="{% static 'js/placemark_2.js' %}" type="text/javascript" ></script>
                 <style>
                     #map {
-                        width: 750px; height: 650px; padding: 5px; margin: 0;
+                        width: 750px; height: 650px;  margin: 0;
+                        border: black solid; border-width: medium;
                     }
                 </style>
             <div id="map"></div>

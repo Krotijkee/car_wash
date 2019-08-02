@@ -1,32 +1,30 @@
 {% extends "car_wash/wrapper.html" %}
 {% block content %}
 {% load staticfiles %}
-<section class="mt-5 ">
-    <div class="container">
-            <!-- paht -->
-       <div class="row">
-           <div class="span12" >
-               <section class="title-section">
-                   <h1 class="pb-3">НАШИ АКЦИИ</h1>
-               </section><!-- .title-section -->
+<div class="container pt-5 pb-5">
+        <!-- paht -->
+   <div class="row">
+       <div class="span12" >
+           <section class="title-section">
+               <h1 class="pb-3">НАШИ АКЦИИ</h1>
+           </section><!-- .title-section -->
+       </div>
+   </div>
+   <div class="row d-flex justify-content-center mt-5">
+       <div class="card shadow shadow-lg rounded-lg" style="width: 18rem;">
+           <img src="{% static 'actions/birthday.JPG' %}" class="card-img-top">
+           <div class="card-body">
+                <h5 class="card-title">20% скидки на Ваш День Рождения!</h5>
+                <p class="card-text">Уважаемы клиенты. В ваш день рождения действует скидка 20% на любые услуги автомойки!💰❗(при предъявлении паспорта)</p>
            </div>
        </div>
-       <div class="row d-flex justify-content-center mt-5">
-           <div class="card shadow shadow-lg rounded-lg" style="width: 18rem;">
-               <img src="{% static 'actions/birthday.JPG' %}" class="card-img-top">
-               <div class="card-body">
-                    <h5 class="card-title">20% скидки на Ваш День Рождения!</h5>
-                    <p class="card-text">Уважаемы клиенты. В ваш день рождения действует скидка 20% на любые услуги автомойки!💰❗(при предъявлении паспорта)</p>
-               </div>
-           </div>
-           <div class="card ml-3 shadow shadow-lg rounded-lg" style="width: 18rem;">
-               <img src="{% static 'actions/action.JPG' %}" class="card-img-bottom">
-               <div class="card-body">
-                    <p class="card-text">Уважаемые клиенты! Атомойка Фрегат проводит акцию-только 4 июля комплексная мойка автомобиля со скидкой 30%!
-                    Условия акции-сделать репост этой записи у себя на странице,предъявить администратору автомойки❗❗❗</p>
-               </div>
+       <div class="card ml-3 shadow shadow-lg rounded-lg" style="width: 18rem;">
+           <img src="{% static 'actions/action.JPG' %}" class="card-img-bottom">
+           <div class="card-body">
+                <p class="card-text">Уважаемые клиенты! Атомойка Фрегат проводит акцию-только 4 июля комплексная мойка автомобиля со скидкой 30%!
+                Условия акции-сделать репост этой записи у себя на странице,предъявить администратору автомойки❗❗❗</p>
            </div>
        </div>
-    </div>
-</section>
+   </div>
+</div>
 {% endblock %}

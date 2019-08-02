@@ -2,5 +2,46 @@
     background-image: url("../images/top-pic.jpg");
     height: 340px;
 }
+body {
+    background:url("../images/fon.jpg") no-repeat;
+    background-size: 500%;
+}
+
+.fon-image{
+    background: url("../images/fon_2.png");
+}
+.work-zone{
+    font: normal small-caps 12px/14px fantasy;
+}
+.my-gallery_1{
+    height: 50px;
+    background-color: lightgoldenrodyellow;
+    border: black solid;border-right: 0;
+    border-width: medium;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.my-gallery_2{
+    background-color: lightgoldenrodyellow;
+    border: black solid;
+    border-width: medium;
+    border-radius: 20px;
+    border-top-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top: 0;
+}
+.my-gallery_3{
+    background-color: lightgoldenrodyellow;
+    border: black solid;
+    border-width: medium;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    border-left: 0;
 
 
+}
