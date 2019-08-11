@@ -2,6 +2,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from .models import Review
+from django.utils.timezone import now
 import smtplib
 
 
@@ -14,7 +16,12 @@ def contact_1(request, loc):
 
 #about_us package
 def reviews(request):
-    return render(request, "car_wash/about_us/reviews.html")
+
+    posts = Review.objects.all().order_by('-id')[:3]
+    context = {
+        'posts' : posts
+    }
+    return render(request, "car_wash/about_us/reviews.html",context)
 
 def license(request):
     return render(request, "car_wash/about_us/license.html")
@@ -90,3 +97,24 @@ def main_get(request):
 
     else:
         return HttpResponse('Ошибка')
+
+
+#review send
+
+def send_review(request):
+    if request.POST:
+        req_name = request.POST['name']
+        req_text = request.POST['text']
+        req_email = request.POST['email']
+
+        # print(req_name)
+        # print(req_text)
+        # print(req_email)
+        new_review = Review(date = now(), name = req_name, email = req_email,text = req_text)
+        new_review.save()
+
+
+        return HttpResponse('Ваш отзыв успешно размещён!')
+    else:
+        return HttpResponse('Ошибка')
+

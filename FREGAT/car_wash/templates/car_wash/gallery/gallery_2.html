@@ -1,141 +1,138 @@
 {% extends "car_wash/wrapper.html" %}
 {% block content %}
-    <div class="container pt-5">
+    <div class="container pt-5" style="width: 100%">
         <!-- paht -->
-       <div class="row">
+       <div class="row text-white">
            <div class="span12" >
                <section class="title-section">
-                   <h1 class="pb-3">ГАЛЕРЕЯ</h1>
+                   <h1 class="pb-3 ts">ГАЛЕРЕЯ</h1>
                <!-- BEGIN BREADCRUMBS-->
                    <div class="" style="width: 100%">
-                       <ul class="breadcrumb breadcrumb__t shadow shadow-lg" style="font-size: 12px;background-color: #e2e6dd;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">ГАЛЕРЕЯ</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="../gallery/gallery_2.html"> пер. Луговой 16 </a></li></ul>
+                       <ul class="breadcrumb breadcrumb__t shadow shadow-lg opacit" style="font-size: 12px;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">ГАЛЕРЕЯ</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="../gallery/gallery_2.html">п. ЛУГОВОЙ 16 </a></li></ul>
                        <!-- END BREADCRUMBS -->
                    </div>
                </section><!-- .title-section -->
            </div>
        </div>
-    </div>
+
     {% load staticfiles %}
-<!-- tittle_1 & empty block -->
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-3 my-gallery_1"><h2 class="">Рабочая зона</h2></div>
-        <div class="col-7 my-gallery_3">
-            <div class="row " style="width: 3px;height: 100%; border-bottom: black solid;border-width: 3px"></div>
+    <!-- tittle_1 & empty block -->
+        <div class="row pt-5">
+            <div class="col-3 my-gallery_1 justify-content-center d-flex"><span style="font-size: 25px"><strong>Рабочая зона</strong></span></div>
+            <div class="col-8 my-gallery_3">
+                <div class="row " style="width: 3px;height: 100%; border-bottom: black solid;border-width: 3px"></div>
+            </div>
+            <div class="col-1"></div>
         </div>
-        <div class="col-1"></div>
-    </div>
-<!-- block 1  -->
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-3"></div>
-        <div class="col-7 my-gallery_2 mb-4">
-            <div class="row ">
-                <div class="col-3">
-                    <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                    </a>
+    <!-- block 1  -->
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-8 my-gallery_2 mb-4">
+                <div class="row ">
+                    <div class="col-3">
+                        <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
                 </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
+                <div class="row mt-3 mb-5">
+                    <div class="col-3">
+                        <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
                 </div>
             </div>
-            <div class="row mt-3 mb-5">
-                <div class="col-3">
-                    <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                    </a>
+            <div class="col-1"></div>
+        </div>
+    <!-- tittle_2 & empty block -->
+        <div class="row pt-5">
+            <div class="col-3 my-gallery_1 justify-content-center d-flex"><span style="font-size: 25px"><strong>Комната ожидания</strong></span></div>
+            <div class="col-8 my-gallery_3">
+                <div class="row " style="width: 3px;height: 100%; border-bottom: black solid;border-width: 3px"></div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    <!-- block 2 -->
+        <div class="row pb-5">
+            <div class="col-3"></div>
+            <div class="col-8 my-gallery_2 mb-4">
+                <div class="row ">
+                    <div class="col-3">
+                        <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
                 </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
+                <div class="row mt-3 mb-5">
+                    <div class="col-3">
+                        <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
+                    <div class="col-3">
+                       <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
+                           <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                       </a>
+                    </div>
                 </div>
             </div>
+            <div class="col-1"></div>
         </div>
-        <div class="col-1"></div>
-    </div>
-<!-- tittle_2 & empty block -->
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-3 my-gallery_1"><h2 class="">Комната отдыха</h2></div>
-        <div class="col-7 my-gallery_3">
-            <div class="row " style="width: 3px;height: 100%; border-bottom: black solid;border-width: 3px"></div>
-        </div>
-        <div class="col-1"></div>
-    </div>
-<!-- block 2 -->
-    <div class="row pb-5">
-        <div class="col-1"></div>
-        <div class="col-3"></div>
-        <div class="col-7 my-gallery_2 mb-4">
-            <div class="row ">
-                <div class="col-3">
-                    <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                    </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-            </div>
-            <div class="row mt-3 mb-5">
-                <div class="col-3">
-                    <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                    </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-                <div class="col-3">
-                   <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                       <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
-                   </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-1"></div>
     </div>
 {% endblock %}

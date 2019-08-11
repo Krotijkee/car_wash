@@ -15,6 +15,7 @@ urlpatterns = [
     path('actions', views.actions),
     path('gruzovik', views.gruzovik),
     path('gallery/<str:loc>', views.gallery),
-    path('main_get', views.main_get, name='main_get')
+    path('main_get', views.main_get, name='main_get'),
+    path('send_review', views.send_review, name='send_review')
 
 ]

@@ -1,48 +1,87 @@
 {% extends "car_wash/wrapper.html" %}
+{% load staticfiles %}
 {% block content %}
-   <div class="container pb-5" style="width: 100%">
-    <!-- Example row of columns -->
-       <div class="container pt-5">
-           <!-- paht -->
-           <div class="row pb-4">
-               <div class="span12" >
-                   <section class="title-section">
-                       <h1 class="pb-3">ОТЗЫВЫ</h1>
-				   <!-- BEGIN BREADCRUMBS-->
-                       <ul class="breadcrumb breadcrumb__t shadow shadow-normal" style="font-size: 12px"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">О КОМПАНИИ</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="/reviews"> ОТЗЫВЫ </a></li></ul>			<!-- END BREADCRUMBS -->
-	               </section><!-- .title-section -->
-               </div>
-           </div>
-
-           <div class="row"  style="width: 1350px; ">
-               <div class="col-md-3  pt-3 shadow shadow-lg" style="background-color: moccasin;border: black solid; border-width: medium; border-radius: 20px">
-                    <div style="height: 250px;">
-                       <h5>ПОСЛЕДНИЙ ОТЗЫВ_1</h5>
-                       <p>Dod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                   </div>
-                   <div>
-                       <p><a class="btn btn-info"  href="#" role="button" >Подробнее »</a></p>
-                   </div>
-               </div>
-               <div class="col-md-3  pt-3 ml-5 mr-5 shadow shadow-lg" style="background-color: moccasin;border: black solid; border-width: medium; border-radius: 20px">
-                    <div style="height: 250px;">
-                       <h5>ПОСЛЕДНИЙ ОТЗЫВ_2</h5>
-                       <p>Dod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                   </div>
-                   <div>
-                       <p><a class="btn btn-info"  href="#" role="button" >Подробнее »</a></p>
-                   </div>
-               </div>
-               <div class="col-md-3 pt-3 shadow shadow-lg" style="background-color: moccasin;border: black solid; border-width: medium; border-radius: 20px">
-                   <div style="height: 250px;">
-                       <h5>ПОСЛЕДНИЙ ОТЗЫВ_3</h5>
-                       <p>Dod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                   </div>
-                   <div>
-                       <p><a class="btn btn-info"  href="#" role="button" >Подробнее »</a></p>
-                   </div>
-               </div>
+<div class="container pb-5 " style="width: 100%">
+   <div class="container pt-5 pb-5 " >
+       <!-- paht -->
+       <div class="row pb-4">
+           <div class="span12" >
+               <section class="title-section">
+                   <h1 class="pb-3 text-white ts">ОТЗЫВЫ</h1>
+               <!-- BEGIN BREADCRUMBS-->
+                   <ul class="breadcrumb breadcrumb__t shadow shadow-normal opacit" style="font-size: 12px"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2 text-white">/</li><li class="active ml-2 text-white">О КОМПАНИИ</a></li> <li class="divider ml-2 text-white">/</li> <li class="ml-2"><a href="/reviews"> ОТЗЫВЫ </a></li></ul>			<!-- END BREADCRUMBS -->
+               </section><!-- .title-section -->
            </div>
        </div>
+
+       <div class="row">
+           <div class="col-1"></div>
+           <div class="col-10">
+               <div class="row">
+                   {% for post in posts %}
+                   <div class="col shadow shadow-lg " style="width: 200px; margin-left: 20px ; background-color: moccasin;border: black solid; border-width: medium; border-radius: 20px">
+                        <div class="mb-3" style="height: 250px;">
+
+                            <h5 class="pt-2">{{ post.name }}</h5>
+                            <div >
+                            <span class="row shadow shadow-md mt-3 pl-3 " style="font-size:12px ;height: 20px ;border: black solid; border-width: thin; border-left: 0; border-right: 0">{{ post.date }}</span>
+                            </div>
+                            <div class="mb-3 size" >
+                                <p class="pt-3" > {{ post.text }}}</p>
+                            </div>
+                       </div>
+                       <div>
+                           <p><a class="btn btn-info"  href="#" role="button" >Подробнее »</a></p>
+                       </div>
+                   </div>
+                   {% endfor %}
+               </div>
+           </div>
+           <div class="col-1"></div>
+       </div>
+       <div class="row d-flex justify-content-center mt-5">
+            <!-- feedback btn -->
+           <a class="btn btn-info rounded-lg text-white align-items-center border-dark shadow shadow-lg ts" style="height: 60px; width: 400px" data-toggle="modal" href="#revModal"><h2>Оставить отзыв</h2></a>
+            <!--feedback -->
+           <div class="modal fade" id="revModal" tabindex="-1" role="dialog" aria-labelledby="revMod" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="revMod">Оставьте отзыв</h5>
+                        <button type="button" id="modal_close_btn" class="close text-white" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="reviewForm" action="" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="name">Ваше имя:</label>
+                                <input id="name" class="form-control" name="name" required type="text" placeholder="Иван">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ваш E-mail:</label>
+                                <input id="email" class="form-control" name="email" required type="text" placeholder="ivanov@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Текст сообщения:</label>
+                                <textarea id="text" class="form-control" required name="text" rows="4"></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                                <input id="check" class="form-check-input" checked type="checkbox">
+                                <label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
+                            </div>
+                            <button id="button" class="btn btn-success" type="submit">Оставить отзыв</button>
+                            <div class="result">
+                                <span id="answer"></span>
+                                <span id="loader" style="display:none"><img src="{% static 'images/loader.gif' %}" alt=""></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       </div>
+       </div>
    </div>
+</div>
 {% endblock %}

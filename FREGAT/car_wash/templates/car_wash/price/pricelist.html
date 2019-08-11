@@ -1,38 +1,38 @@
 {% extends "car_wash/wrapper.html" %}
 {% block content %}
-    <div class="container pt-5 pb-5" style="width: 100%">
+    <div class="container pt-5 pb-5 text-white" style="width: 100%">
         <div class="container">
         <!-- paht -->
            <div class="row">
                <div class="span12" >
                    <section class="title-section">
-                       <h1 class="pb-3">НАШИ РАСЦЕНКИ</h1>
+                       <h1 class="pb-3 ts">НАШИ РАСЦЕНКИ</h1>
                    <!-- BEGIN BREADCRUMBS-->
                        <div class="" style="width: 40%">
-                           <ul class="breadcrumb breadcrumb__t shadow shadow-lg" style="font-size: 12px;background-color: #e2e6dd;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li> <li class="ml-2"><a href="/price"> ЦЕНЫ </a></li></ul>			<!-- END BREADCRUMBS -->
+                           <ul class="breadcrumb breadcrumb__t shadow shadow-lg opacit" style="font-size: 12px;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li> <li class="ml-2"><a href="/price"> ЦЕНЫ </a></li></ul>			<!-- END BREADCRUMBS -->
                        </div>
                    </section><!-- .title-section -->
                </div>
            </div>
         </div>
         <div class="accordion mt-5 mb-5" id="collapse-group">
-            <div class="card bg-info shadow shadow-lg rounded-lg">
+            <div class="card tcss shadow shadow-lg rounded-lg">
                 <div class="card-header pt-5" style="padding-left: 15%" id="headingOne">
                     <h2 class="text-white mb-5">
-                        <div class="span" data-toggle="collapse" data-target="#price1" aria-expanded="true" aria-controls="price1">Прейскурант цен на услуги автомойки "Фрегат"</div>
+                        <div class="span ts rounded rounded-lg shadow shadow-lg" data-toggle="collapse" data-target="#price1" aria-expanded="true" aria-controls="price1">Прейскурант цен на услуги автомойки "Фрегат"</div>
                     </h2>
                 </div>
                 <div id="price1" class="collapse show border-top border-white" aria-labelledby="headingOne" data-parent="#collapse-group">
                     <div class="card-body">
                         <table class="table text-white">
-                              <thead class="thead-dark">
+                              <thead class="thead-black ts">
                                 <tr>
                                   <th class="col">Услуги<br><br><br></th>
                                   <th scope="col" class="pr-5">Седан, хэтчбэк, купэ<br><br></th>
                                   <th scope="col">Универсал, Rav4(3дв)<br><br><br></th>
-                                  <th scope="col">Кроссовер, минивэн, паркетник, Nissan Juke</th>
+                                  <th scope="col">Кроссовер, минивэн, Nissan Juke</th>
                                   <th scope="col">Пикап, внедорожник, Land Cruiser, BMW x5/6</th>
-                                  <th scope="col">Микроавтобус, газель, фургон<br><br><br></th>
+                                  <th scope="col">Микроавтобус, газель, фургон<br><br></th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -233,6 +233,7 @@
                     </div>
                 </div>
             </div>
+            <!---
             <div class="card bg-warning">
                 <div class="card-header" id="headingThree">
                     <div class="span collapsed" data-toggle="collapse" data-target="#price3" aria-expanded="false" aria-controls="price3">Цена 2</div>
@@ -253,20 +254,21 @@
                     </div>
                 </div>
             </div>
+            --->
         </div>
-        <div class="row ">
+        <div class="row ts">
             <div class="span10"><h2>Автомойка в Томске обеспечит чистоту вашего автомобиля за небольшие деньги</h2>
             <p class="more mt-3" style="font-size: 20px"><em>Улицы этого большого города бороздит множество автомобилей. На них разъезжают люди, у которых бизнес, семья и корпоративная деятельность, отнимают массу времени и сил, поэтому их зачастую не хватает для того, чтобы привести в порядок свой авто, либо доходы данных граждан настолько велики, что утруждать себя мытьем автомашины будет для них дорогим удовольствием. Для них важен комфорт, чистота и престиж, сияющий блеск их авто, который будет выглядеть как новый. Согласитесь если приехать на деловые переговоры в грязном авто, то какое мнение сложиться о вас у возможных партнеров, это может негативным образом повлиять на их исход.<br>
                 Прайс лист на услуги нашей автомойки можно изучить как на самой мойке, так и на сайте компании. Это позволит предварительно составить перечень услуг, которыми вы планируете воспользоваться.</em></p></div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 ts">
             <div class="span10 "><h2>Сколько стоит автомойка машины и из чего она формируется?</h2>
                 <p class="more mt-3" style="font-size: 20px"><em>В первую очередь она зависит от класса машины, общей площади его кузова. Чем больше автомобиль, тем выше стоимость, так как больше труда в этот процесс необходимо вложить и потратить расходных материалов, например воды.<br>
                 Кроме этого, большие затраты труда и расход моющей жидкости обуславливается и наличием разнообразных изгибов и углов, что соответствующим образом отражается на цене.<br>
                     Стоимость работ также формируется в зависимости от вида мойки и дополнительных услуг, которые может заказать клиент.</em></p>
             </div>
         </div>
-        <div class="row mt-3">
+        <div class="row mt-3 ts">
             <div class="span10 ">
                 <p class="more" style="font-size: 20px"><strong>Любой владелец транспортного средства может, изучив прайс нашей автомойки, легко и быстро подсчитать, во сколько обойдётся ему его чистота, а она, как известно, играет немаловажную роль в жизни человека – не допускает возникновение массы заболеваний и улучшает его самочувствие.<br>
                     Мы делаем все, чтобы клиент получил максимально полный объем информации о нашей автомойке. Прайс, составленный грамотными менеджерами, еще одно тому подтверждение.</strong></p>

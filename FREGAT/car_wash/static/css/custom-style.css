@@ -2,13 +2,16 @@
     background-image: url("../images/top-pic.jpg");
     height: 340px;
 }
+.bubles{
+    background-image: url("../images/bubles.png");
+}
 body {
-    background:url("../images/fon.jpg") no-repeat;
-    background-size: 500%;
+    background:url("../images/metall.jpg") ;
 }
 
 .fon-image{
-    background: url("../images/fon_2.png");
+    background:url("../images/fon_bubbles.png");
+
 }
 .work-zone{
     font: normal small-caps 12px/14px fantasy;
@@ -42,6 +45,44 @@ body {
     border-bottom-right-radius: 0;
     border-bottom: 0;
     border-left: 0;
+}
+.size{
+    height: 140px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.ts {
+	font-family: Arial;
+	color: #FFFFFF;
+	text-shadow:
+		-0   -1px 3px #000000,
+		 0   -1px 3px #000000,
+		-0    1px 3px #000000,
+		 0    1px 3px #000000,
+		-1px -0   3px #000000,
+		 1px -0   3px #000000,
+		-1px  0   3px #000000,
+		 1px  0   3px #000000,
+		-1px -1px 3px #000000,
+		 1px -1px 3px #000000,
+		-1px  1px 3px #000000,
+		 1px  1px 3px #000000,
+		-1px -1px 3px #000000,
+		 1px -1px 3px #000000,
+		-1px  1px 3px #000000,
+		 1px  1px 3px #000000;
+}
+/* created with http://protocoder.ru/css/strokeTextGen */
+.opacit{
+    background: rgba(0,0,0,0.5);
+}
+.tcss{
+    background: rgba(186,212,88,0.3);
+}
+
+.rbgl{
+    background: url("../images/actions/tm-hl.png") no-repeat;
+    height: 100%;
 
 
 }

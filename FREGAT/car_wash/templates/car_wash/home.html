@@ -1,9 +1,20 @@
 {% extends "car_wash/wrapper.html" %}
 {% block content %}
 {% load staticfiles %}
-    <div class="row pb-5">
-        <div class="col-2 mr-5"></div>
-        <div class="col-md-7 mt-5" style="font-size: 17px">
+    <div class="row pb-5" style="width: 100%">
+        <div class="col-2 mr-5">
+            <div class="col-12 rounded-lg" style="height: 55px"></div>
+            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
+            <!-- VK Widget -->
+            <div id="vk_groups" style="padding-left: 50px">
+                <script type="text/javascript">
+                VK.Widgets.Group("vk_groups", {mode: 3}, 183623649);
+                </script>
+            </div>
+
+        </div>
+        <div class="col-md-7 mt-5" style="font-size: 17px; margin-left: 30px">
             <div class="row mb-3 pt-3 shadow shadow-lg"  style="background-color: lightgoldenrodyellow;border: black solid; border-width: medium; border-radius: 20px">
                 <div class="col-md-7 ">
                     <em>
@@ -27,7 +38,7 @@
                     </div>
                     <div class="pt-5">
                         <a class="highslide" href="{% static 'images/home/kapot_1.PNG' %}" onclick="return hs.expand(this)">
-                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/kapot_1.JPG' %}">
+                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/kapot_1.PNG' %}">
                         </a>
                     </div>
                 </div>
@@ -55,8 +66,20 @@
                 </div>
             </div>
         </div>
-        <div class="col-2 ml-5">
-            h
+        <div class="row mt-5" style="height: 300px; width: 201px">
+            <div class="row ml-3" style="height: 100px;background: #17a2b8;width: 201px">
+                <img class="" src="{% static 'images/actions/ed-bg.png'%}">
+            </div>
+            <div class="row ml-3" style="height: 80px; width: 201px">
+                <div class="row ml-3" style="height: 100px; width: 15px">
+                </div>
+                <div class="col-8">
+                    <img src="{% static 'images/act_thumb/discount_sm.jpg' %}">
+                </div>
+                <div class="col-2" style="background: black">
+                    <img src="{% static 'images/actions/tm-hr.png' %}">
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

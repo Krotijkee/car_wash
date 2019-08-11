@@ -40,85 +40,84 @@
     <title>Автомойка в Томске "Фрегат"</title>
   </head>
   <body class="pb-4">
-    <!-- Вконтакте лого -->
-    <div class="row jumbotron big-banner d-flex pt-0 mb-0 rounded-0">
-        <div class="colM">
-            <div class="col-12">
-                <img style="height: 250px;margin-left: 6%" src="{% static 'images/fregat_logo1.PNG' %}">
+        <!-- Вконтакте лого -->
+        <div class="row jumbotron big-banner d-flex pt-0 mb-0 rounded-0">
+            <div class="colM">
+                <div class="col-12">
+                    <img style="height: 250px;margin-left: 6%" src="{% static 'images/fregat_logo1.PNG' %}">
+                </div>
+                <!--
+                <div class="pl-5">
+                    <a href="https://vk.com/public183623649" class="row vk-ico" style="margin-left: 15%">
+                        <img src="{% static 'images/insta_icon.PNG' %}" class="rounded" title="Мы в Instagram">
+                        <p>
+                            <img src="{% static 'images/vk_icon.PNG' %}" class="rounded ml-3" title="Мы Вконтакте">
+                        </p>
+                    </a>
+                </div>
+                -->
             </div>
-            <!--
-            <div class="pl-5">
-                <a href="https://vk.com/public183623649" class="row vk-ico" style="margin-left: 15%">
-                    <img src="{% static 'images/insta_icon.PNG' %}" class="rounded" title="Мы в Instagram">
-                    <p>
-                        <img src="{% static 'images/vk_icon.PNG' %}" class="rounded ml-3" title="Мы Вконтакте">
-                    </p>
-                </a>
+        </div>
+
+        <!-- navbar menu -->
+        <div class="row bubles navbar navbar-expand-md shadow shadow-normal">
+            <div class="collapse navbar-collapse justify-content-center" >
+                <ul class="navbar-nav  text-center">
+                    <li class="nav-item text-dark ">
+                        <a class="nav-link  rounded-lg text-dark" href="../home"><strong>ГЛАВНАЯ</strong></a>
+                    </li>
+                    <li class="nav-item dropdown text-dark ">
+                        <a class="nav-link  rounded-lg text-dark" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>О КОМПАНИИ</strong></a>
+                        <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown01">
+                            <a class="dropdown-item text-white rounded-lg" href="../reviews">ОТЗЫВЫ</a>
+                            <a class="dropdown-item text-white rounded-lg" href="../license">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a>
+                            <a class="dropdown-item text-white rounded-lg" href="../clients">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link rounded-lg text-dark " href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>АВТОМОЙКА</strong></a>
+                        <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown02">
+                            <a class="dropdown-item rounded-lg text-white" href="../w-contact">БЕСКОНТАКТНАЯ МОЙКА</a>
+                            <a class="dropdown-item rounded-lg text-white" href="../nano">НАНО-МОЙКА</a>
+                            <a class="dropdown-item rounded-lg text-white" href="../chemical">ХИМЧИСТКА</a>
+                            <a class="dropdown-item rounded-lg text-white" href="../gruzovik">АВТОМОЙКА ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-lg text-dark" href="../price"><strong>УСЛУГИ И ЦЕНЫ</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link rounded-lg text-dark" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ГАЛЕРЕЯ</strong></a>
+                        <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown03">
+                            <a class="dropdown-item rounded-lg text-white" href="../gallery/gallery_1.html">ГАЛЕРЕЯ 1</a>
+                            <a class="dropdown-item rounded-lg text-white" href="../gallery/gallery_2.html">ГАЛЕРЕЯ 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-lg text-dark" href="../actions"><strong>АКЦИИ</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link rounded-lg text-dark" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>КОНТАКТЫ</strong></a>
+                        <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown04">
+                            <a class="dropdown-item rounded-lg text-white" href="/contact_1/sib79.html">ул.Сибирская 79 б</a>
+                            <a class="dropdown-item rounded-lg text-white" href="../contact_1/lug16.html">пер.Луговой 16</a>
+                            <!--feedback button -->
+                            <a class="dropdown-item rounded-lg text-white" data-toggle="modal" href="#exampleModal">ОБРАТНАЯ СВЯЗЬ</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            -->
         </div>
-    </div>
-
-    <!-- navbar menu -->
-    <div class="row navbar navbar-expand-md bg-dark shadow shadow-normal">
-        <div class="collapse navbar-collapse justify-content-center" >
-            <ul class="navbar-nav  text-center">
-                <li class="nav-item ">
-                    <a class="nav-link text-white rounded-lg" href="../home">ГЛАВНАЯ</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white rounded-lg" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">О КОМПАНИИ</a>
-                    <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-white rounded-lg" href="../reviews">ОТЗЫВЫ</a>
-                        <a class="dropdown-item text-white rounded-lg" href="../license">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a>
-                        <a class="dropdown-item text-white rounded-lg" href="../clients">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white rounded-lg" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">АВТОМОЙКА</a>
-                    <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown02">
-                        <a class="dropdown-item rounded-lg text-white" href="../w-contact">БЕСКОНТАКТНАЯ МОЙКА</a>
-                        <a class="dropdown-item rounded-lg text-white" href="../nano">НАНО-МОЙКА</a>
-                        <a class="dropdown-item rounded-lg text-white" href="../chemical">ХИМЧИСТКА</a>
-                        <a class="dropdown-item rounded-lg text-white" href="../gruzovik">АВТОМОЙКА ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white rounded-lg" href="../price">УСЛУГИ И ЦЕНЫ</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white rounded-lg " href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ГАЛЕРЕЯ</a>
-                    <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown03">
-                        <a class="dropdown-item rounded-lg text-white" href="../gallery/gallery_1.html">ГАЛЕРЕЯ 1</a>
-                        <a class="dropdown-item rounded-lg text-white" href="../gallery/gallery_2.html">ГАЛЕРЕЯ 2</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white rounded-lg" href="../actions">АКЦИИ</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-white rounded-lg" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">КОНТАКТЫ</a>
-                    <div class="dropdown-menu bg-info rounded-lg" aria-labelledby="dropdown04">
-                        <a class="dropdown-item rounded-lg text-white" href="/contact_1/sib79.html">ул.Сибирская 79 б</a>
-                        <a class="dropdown-item rounded-lg text-white" href="../contact_1/lug16.html">пер.Луговой 16</a>
-                        <!--feedback button -->
-                        <a class="dropdown-item rounded-lg text-white" data-toggle="modal" href="#exampleModal">ОБРАТНАЯ СВЯЗЬ</a>
-                    </div>
-                </li>
-            </ul>
+        <div class="row fon-image" >
+        {% block content %}
+        {% endblock %}
         </div>
-    </div>
-    <div class="fon-image">
-    {% block content %}
-    {% endblock %}
-    </div>
-
     <!--feedback -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content bg-dark text-white">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Оставьте отзыв</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
                     <button type="button" id="modal_close_btn" class="close text-white" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -185,6 +184,8 @@
     <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
     <!-- Инициализация и Ajax-запрос -->
     <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/review.js' %}"></script>
+
   </body>
 
 </html>
