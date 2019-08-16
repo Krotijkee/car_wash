@@ -36,8 +36,8 @@ jQuery(document).ready(function($) {
                 loader.fadeOut(300, function() {
                     answer.text(result);
                 });
-                button=$('#battttttn');                form.find('.form-control').val(' ');
-                //button.attr('disabled', false);
+                form.find('.form-control').val(' ');
+                button.attr('enabled', true).css('margin-bottom','20px');
             },
             error: function() {
                 loader.fadeOut(300, function() {

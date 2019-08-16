@@ -2,83 +2,85 @@
 {% block content %}
 {% load staticfiles %}
     <div class="row pb-5" style="width: 100%">
-        <div class="col-2 mr-5">
-            <div class="col-12 rounded-lg" style="height: 55px"></div>
-            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+        <div class="col-2 ml-4 mr-3 mt-5">
+            <div class="col-12 rounded-lg  mt-3" >
+                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 
-            <!-- VK Widget -->
-            <div id="vk_groups" style="padding-left: 50px">
+                <!-- VK Widget -->
+                <div id="vk_groups"></div>
                 <script type="text/javascript">
-                VK.Widgets.Group("vk_groups", {mode: 3}, 183623649);
+                VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1}, 183623649);
                 </script>
             </div>
-
         </div>
+
         <div class="col-md-7 mt-5" style="font-size: 17px; margin-left: 30px">
-            <div class="row mb-3 pt-3 shadow shadow-lg"  style="background-color: lightgoldenrodyellow;border: black solid; border-width: medium; border-radius: 20px">
-                <div class="col-md-7 ">
+            <div class="row mb-3 pt-3 shadow shadow-lg">
+
+                <div class="h_post1"style="height: 22%;max-height: 250px;"></div>
+                <div class="col-7 mt-2" style="position: relative">
                     <em>
-                        <p align="justify">
+                        <p class="text-white ts" align="justify" style="">
                         Что ценит любой автовладелец? Комфорт, надежность, техническая составляющая и так далее. И каждый хочет видеть своего железного коня, припаркованного возле дома или офиса, опрятного и с первоначальным блеском. Что не удивительно, ведь внешний вид автомобиля – лицо и гордость его владельца. И специалисты Нашего «автомоечного комплекса» это прекрасно понимают!
                         </p>
                     </em>
                 </div>
-                <div class="col-5 pb-3 pt-2">
-                    <a class="highslide" href="{% static 'images/home/7.PNG' %}" onclick="return hs.expand(this)">
-                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/7.JPG' %}">
+                <div class="col-5 pb-3 mt-3" style="position:relative">
+                    <a class="highslide" href="{% static 'images/home/7.png' %}" onclick="return hs.expand(this)">
+                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/7.jpg' %}">
                     </a>
                 </div>
             </div>
-            <div class="row mb-3 pt-3 shadow shadow-lg"  style="background-color: lightgoldenrodyellow;border: black solid; border-width: medium; border-radius: 20px">
-                <div class="col-4 pt-2">
-                    <div class="pb-3">
-                        <a class="highslide" href="{% static 'images/home/5.PNG' %}" onclick="return hs.expand(this)">
-                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/5.JPG' %}">
+            <div class="row mb-3  shadow shadow-lg"  >
+                <div class="h_post1" style="height: 43% ;max-height: 500px;"></div>
+                <div class="col-4 pt-2" style="position: relative">
+                    <div class="pb-1 pt-2">
+                        <a class="highslide" href="{% static 'images/home/5.png' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/5.jpg' %}">
                         </a>
                     </div>
                     <div class="pt-5">
-                        <a class="highslide" href="{% static 'images/home/kapot_1.PNG' %}" onclick="return hs.expand(this)">
-                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/kapot_1.PNG' %}">
+                        <a class="highslide" href="{% static 'images/home/kapot_1.png' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/kapot_1.png' %}">
                         </a>
                     </div>
                 </div>
-                <div class="col-8">
-                    <p align="justify">
+                <div class="col-8 pt-3" style="position: relative">
+                    <p class="pr-2 text-white ts" align="justify">
                         <em>
                             Команда наших специалистов ликвидируют грязь с любого транспортного средства. В нашем автомоечном центре мойка автомобилей производится аппаратами высокого давления с применением современной авто химии и авто косметики. Мы предоставляем целый комплекс авто услуг, после которых Ваш железный конь буквально засияет от чистоты. Это полировка, помывка двигателя, покрытие кузова автомобиля, его зеркал и стекол специальным защитным материалом.
-                            <br><strong>«Слишком много чести!»</strong> - именно так рассуждает большинство автовладельцев. Но, поверьте, Ваши усилия будут вознаграждены. Ведь чистый двигатель снижает вероятность перегрева. Да и обслужить «сердце» автомобиля (менять моторное масло, воздушные фильтры, свечи зажигания) в чистом виде гораздо приятнее. К тому же, чистый моторный отсек более пожароустойчив.
+                            <br><strong class="text-primary">«Слишком много чести!»</strong> - именно так рассуждает большинство автовладельцев. Но, поверьте, Ваши усилия будут вознаграждены. Ведь чистый двигатель снижает вероятность перегрева. Да и обслужить «сердце» автомобиля (менять моторное масло, воздушные фильтры, свечи зажигания) в чистом виде гораздо приятнее. К тому же, чистый моторный отсек более пожароустойчив.
                         </em>
                     </p>
                 </div>
             </div>
-            <div class="row mb-3 pt-3 shadow shadow-lg"  style="background-color: lightgoldenrodyellow;border: black solid; border-width: medium; border-radius: 20px">
-                <div class="col-7">
+            <div class="row mb-3 shadow shadow-lg" >
+                <div class="h_post1" style="height: 28% ;max-height: 280px;"></div>
+                <div class="col-7 pt-3" style="position: relative">
                     <em>
-                        <p align="justify">
+                        <p class="text-white ts" align="justify">
                             Не секрет, что кузов – самая дорогостоящая часть автомобиля. Именно поэтому важно понимать, что грязь, имеющая свойство проникать в краску, может подвергнуть автомобиль усиленной коррозии и разрушить его лакокрасочное покрытие. Воспользовавшись услугами нашего центра, вы не только получите бережно вымытый автомобиль, но и приятное обслуживание. С нами Вы поймете, что такое оперативный сервис, качественные услуги и демократичные цены.
                         </p>
                     </em>
                 </div>
-                <div class="col-5 pt-3">
-                    <a class="highslide" href="{% static 'images/home/lkp.PNG' %}" onclick="return hs.expand(this)">
-                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.JPG' %}">
+                <div class="col-5 pt-4" style="position:relative;">
+                    <a class="highslide" href="{% static 'images/home/lkp.png' %}" onclick="return hs.expand(this)">
+                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.jpg' %}">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="row mt-5" style="height: 300px; width: 201px">
-            <div class="row ml-3" style="height: 100px;background: #17a2b8;width: 201px">
+        <div class="col-2 mt-5" style="height: 300px; width: 201px">
+            <div class="row ml-4" style="max-width: 201px; width: 100%">
                 <img class="" src="{% static 'images/actions/ed-bg.png'%}">
             </div>
-            <div class="row ml-3" style="height: 80px; width: 201px">
-                <div class="row ml-3" style="height: 100px; width: 15px">
+            <div class="row ml-4 rbgl d-flex justify-content-center" style=" max-width: 200px;width:100%;height: 100%; max-height: 150px;border-bottom: black ;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px">
+                <div class="row">
+                    <a class="row justify-content-center" href="actions ">
+                        <img src="{% static 'images/act_thumb/discount_sm.jpg' %}" style="height: 65%;margin-top: 15px">
+                    </a>
                 </div>
-                <div class="col-8">
-                    <img src="{% static 'images/act_thumb/discount_sm.jpg' %}">
-                </div>
-                <div class="col-2" style="background: black">
-                    <img src="{% static 'images/actions/tm-hr.png' %}">
-                </div>
+
             </div>
         </div>
     </div>

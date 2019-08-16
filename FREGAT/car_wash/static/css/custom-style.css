@@ -1,25 +1,48 @@
+/* WRAPPER for large size screen */
 .big-banner{
-    background-image: url("../images/top-pic.jpg");
-    height: 340px;
+    background: url("../images/top-pic.jpg") no-repeat center center/cover;
+    background-size: 100%;
+    background-position: top;
+    padding-bottom: 5%;
+
 }
+.logotip{
+    height: 100%;
+    max-height: 250px;
+    margin-left: 6%;
+}
+
+/* small size screen*/
+/*logotip{*/
+/*    height: 100%;*/
+/*    margin-top: 5%;*/
+/*    max-height: 250px;*/
+/*    margin-left: 6%;*/
+/*}*/
 .bubles{
-    background-image: url("../images/bubles.png");
+    background: url("../images/bubles.png");
+
 }
 body {
+    padding: 0;
+    margin: 0;
     background:url("../images/metall.jpg") ;
 }
 
 .fon-image{
-    background:url("../images/fon_bubbles.png");
+    background:url("../images/fon_bubbles.png") center/cover;
 
 }
 .work-zone{
     font: normal small-caps 12px/14px fantasy;
 }
+
+/* GALLERY for large size screen */
 .my-gallery_1{
     height: 50px;
     background-color: lightgoldenrodyellow;
-    border: black solid;border-right: 0;
+    border: black solid;
+    border-right: 0;
     border-width: medium;
     border-radius: 20px;
     border-top-right-radius: 0;
@@ -46,31 +69,31 @@ body {
     border-bottom: 0;
     border-left: 0;
 }
+
 .size{
     height: 140px;
     overflow:hidden;
     text-overflow: ellipsis;
 }
 .ts {
-	font-family: Arial;
 	color: #FFFFFF;
 	text-shadow:
-		-0   -1px 3px #000000,
-		 0   -1px 3px #000000,
-		-0    1px 3px #000000,
-		 0    1px 3px #000000,
-		-1px -0   3px #000000,
-		 1px -0   3px #000000,
-		-1px  0   3px #000000,
-		 1px  0   3px #000000,
-		-1px -1px 3px #000000,
-		 1px -1px 3px #000000,
-		-1px  1px 3px #000000,
-		 1px  1px 3px #000000,
-		-1px -1px 3px #000000,
-		 1px -1px 3px #000000,
-		-1px  1px 3px #000000,
-		 1px  1px 3px #000000;
+		-0   -1px 1px #000000,
+		 0   -1px 1px #000000,
+		-0    1px 1px #000000,
+		 0    1px 1px #000000,
+		-1px -0   1px #000000,
+		 1px -0   1px #000000,
+		-1px  0   1px #000000,
+		 1px  0   1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000;
 }
 /* created with http://protocoder.ru/css/strokeTextGen */
 .opacit{
@@ -81,8 +104,20 @@ body {
 }
 
 .rbgl{
-    background: url("../images/actions/tm-hl.png") no-repeat;
-    height: 100%;
+    background: rgba(239,198,25,1);
+}
+.flexible-img{
+    max-width: 100%;
+}
 
-
+/* /HOME CSS for large size */
+/* post */
+.h_post1{
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+    background-color: lightgoldenrodyellow;
+    border: black solid;
+    border-width: medium;
+    border-radius: 20px;
 }

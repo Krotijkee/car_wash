@@ -66,7 +66,7 @@ def main_get(request):
         # create message object instance
         msg = MIMEMultipart()
 
-        message = request.POST["message"]
+        message = "From:" + " " + request.POST["email"] + " " + "Message:" + " " + request.POST["message"]
 
         # setup the parameters of the message
         password = "fregat"
@@ -93,8 +93,6 @@ def main_get(request):
         print
         "successfully sent email to %s:" % (msg['To'])
         return HttpResponse('Ваше сообщение отправлено')
-
-
     else:
         return HttpResponse('Ошибка')
 
