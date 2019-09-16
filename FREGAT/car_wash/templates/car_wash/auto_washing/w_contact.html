@@ -1,4 +1,4 @@
-{% extends "car_wash/wrapper.html" %}
+{% extends "car_wash/wrapper_demo.html" %}
 {% block content %}
 
 <div class="container pt-5 pb-5" style="width: 100%">
@@ -9,15 +9,15 @@
                <section class="title-section">
                    <h1 class="pb-3 text-white ts">БЕСКОНТАКТНАЯ АВТОМОЙКА</h1>
                <!-- BEGIN BREADCRUMBS-->
-                   <div class="text-white" style="width: 58%">
-                       <ul class="breadcrumb breadcrumb__t shadow shadow-lg opacit" style="font-size: 12px;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">АВТОМОЙКА</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="/w-contact"> БЕСКОНТАКТНАЯ МОЙКА </a></li></ul>			<!-- END BREADCRUMBS -->
+                   <div class="text-white" style="width: 38%">
+                       <ul class="breadcrumb breadcrumb__t shadow shadow-lg opacit" style="font-size: 40%;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">АВТОМОЙКА</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="/w-contact"> БЕСКОНТАКТНАЯ МОЙКА </a></li></ul>			<!-- END BREADCRUMBS -->
                    </div>
                </section><!-- .title-section -->
            </div>
        </div>
     </div>
     <div class="container ts" >
-        <div class="row ">
+        <div id="text-pic-block"  class="row ">
             <div class="col">
                 <div class="span8 text-white">&nbsp;<p></p>
                 <p class="more" style="font-size: larger; font-style: italic">Бесконтактная автомойка завоевала популярность благодаря важному преимуществу – качественной и бережной очистке кузова автомобиля.<br>
@@ -28,7 +28,7 @@
             </div>
             <div class="col mt-5">
                 {% load staticfiles %}
-                <img class="rounded-lg" src="{% static 'images/w_contact.png' %}" title="photo">
+                <img class="rounded-lg" src="{% static 'images/w_contact.png' %}" title="photo" style="max-width: 100%; height: auto">
                 <p class="more mt-3"><strong>Если вы хотите ощутить все плюсы бесконтактной автомойки, цена которой доступна, приезжайте в нашу автомойку «Фрегат»! У нас работают ответственные мастера. Мы используем качественную автохимию. Регулярно проводим акции и предлагаем скидки. Работаем для вас ежедневно с 8.00 до 22.00.
                     Стоимость бесконтактной мойки у нас доступна. Сохранность лакокрасочного покрытия и свежий внешний вид вашего автомобиля окупают ее сполна.</strong></p>
             </div>

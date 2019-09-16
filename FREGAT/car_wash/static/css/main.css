@@ -1,0 +1,377 @@
+/* Основные параметры разметки */
+*, .row {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: url("../images/top-pic.jpg") no-repeat center/cover;
+    background-size: 100%;
+    background-position: top;
+    left: 0;
+    right: 0;
+    padding-bottom: 10%!important;
+}
+.btn {
+    background: rgba(23, 162, 184, 0.6)!important;
+    color: white!important;
+}
+.opacit{
+    background: rgba(0,0,0,0.5);
+}
+.tcss{
+    background: rgba(186,212,88,0.3);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    padding-bottom: 40px;
+    background:url("../images/fon_bubbles.png"),url("../images/metall.jpg");
+    font-size: 24px;
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 9px;
+}
+
+/********************** GIFTBOX **************************/
+#giftbox {
+    margin-top:3.5%;
+    height: 13.5% ;
+    width: 100%;
+    padding-left: 2%;
+}
+#giftbox-bot > a{
+    width: 100%;
+    background: rgba(239,198,25,1);
+    border-bottom: black ;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+#giftbox-bot > a > img{
+    width:80%;
+    padding-bottom:15%;
+    padding-top: 10%;
+}
+
+/********************** POST *****************************/
+.post{
+    width: 100%;
+    background: rgba(250, 250, 210,0.4);
+    border: black solid;
+    border-width: medium;
+    border-radius: 20px;
+}
+
+.ts {
+	color: #FFFFFF;
+	text-shadow:
+		-0   -1px 1px #000000,
+		 0   -1px 1px #000000,
+		-0    1px 1px #000000,
+		 0    1px 1px #000000,
+		-1px -0   1px #000000,
+		 1px -0   1px #000000,
+		-1px  0   1px #000000,
+		 1px  0   1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000;
+}
+
+/* Панель навигации */
+#navbar{
+    background: url("../images/bubles.png");
+}
+.nav-item:hover{
+    background: rgba(0,0,0,0.4)    !important;
+    border: black;
+    border-radius: 10px;
+    margin:0;
+
+}
+.dropdown:hover > .dropdown-menu{
+    display: block;
+    margin: 0;
+
+}
+.dropdown-menu > a:hover {
+    background: rgba(16,166,166,0.2);
+
+}
+.nav-link, .nav-item > a:hover{
+    color:black;
+}
+.nav-item{
+    font-size: 100%;
+}
+
+.navbar-toggler-icon {
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.8)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Логотип */
+#logo{
+    max-height: 100%;
+    margin-left: 6%;
+}
+#logo > img {
+    width: auto;
+    max-width:100%;
+    max-height: 100%;
+}
+
+/*******************CONTENT*******************/
+.size{
+    height: 140px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+/******************GALLERY*******************/
+.tabs-container {
+    margin-bottom: 10%;
+    margin-top: 5%
+}
+.my-gallery_1{
+    background-color: rgba(250, 250, 210,0.4);
+    border: black solid;
+    border-right: 0;
+    border-width: thin;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.my-gallery_2{
+    background-color: rgba(250, 250, 210,0.4);
+    border: black solid;
+    border-width: thin;
+    border-radius: 10px;
+    border-top-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top: 0;
+}
+.my-gallery_3{
+    padding: 0;
+    background-color: rgba(250, 250, 210,0.4);
+    border: black solid;
+    border-width: thin;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+/********************MY_NEW_GALLERY*****************/
+
+.tabs {
+    display: flex!important;
+}
+
+.tabs li:not(:last-child) {
+    margin-right: 7px!important;
+}
+
+.tabs li a {
+    display: block!important;
+    position: relative!important;
+    top: 4px!important;
+    padding: 10px 25px!important;
+    border-radius: 10px 10px 0 0!important;
+    background: rgb(255, 254, 216);
+    opacity: 0.7!important;
+    transition: all 0.1s ease-in-out!important;
+}
+
+.tabs li.active a,
+.tabs li a:hover {
+    opacity: 1!important;
+    top: 0!important;
+}
+
+.tabs-content {
+    position: relative!important;
+    z-index: 2!important;
+    border-radius: 0 4px 4px 4px!important;
+    background: rgb(255, 254, 216);
+    padding: 5% 0;
+}
+
+.tabs-panel {
+    display: none!important;
+    padding: 2% 0 1% 0;
+}
+
+.tabs-panel.active {
+    display: block!important;
+}
+
+/****/
+@media screen and (max-width: 1921px){
+
+    #logo{
+        max-width: 100%;
+        max-height: 100%;
+        padding-bottom: 10%;
+
+    }
+    #logo > img {
+        padding-bottom: 0;
+        max-width:30%;
+        max-height: 100%;
+    }
+    header {
+        padding: 0!important;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .nav-link, .dropdown-item, body {
+        font-size: 22px;
+    }
+    .nav-item:hover {
+        border-radius: unset;
+    }
+    #giftbox, #vkontakte {
+        margin-top: 0!important;
+    }
+    #container {
+        margin-top: 5%;
+    }
+    #content-block {
+        margin: 0 !important;
+        padding: 0!important;
+        width: 100%!important;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1840px) {
+    .nav-link, .dropdown-item,body{
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 1753px) {
+    .nav-link, .dropdown-item,body{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1665px) {
+    .nav-link, .dropdown-item,body{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 1578px) {
+    .nav-link, .dropdown-item,body{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1491px) {
+    .nav-link, .dropdown-item,body{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #vkontakte, #giftbox{
+        display: none;
+        }
+    .nav-link, .dropdown-item,body{
+        font-size: 17px;
+    }
+    .navbar-nav > li {
+        border-top: 1px solid black;
+    }
+    #nano-movie {
+        margin-top: 5%;
+        margin-bottom: 0!important;
+        width: 100%;
+        height: 100%;
+    }
+    #gruz_pic_block > div {
+        max-width: 100% !important;
+        display: inline-block;
+    }
+    .actions_post {
+        display: inline-block!important;
+    }
+    .actions_post > div {
+        padding: 2%;
+    }
+    .actions_post > img {
+        max-width: 100%!important;
+        margin-bottom: 1%;
+    }
+    #review_post {
+        display: inline-block!important;
+        width: 100% !important;
+        margin-bottom: 5%;
+    }
+    #map_api {
+        width: 100% !important;
+        height: 250px!important;
+    }
+    #geo {
+        display: inline-block;
+    }
+    #geo > div {
+        max-width: 100% !important;
+    }
+}
+@media screen and (max-width: 878px) {
+    .nav-link, .dropdown-item,body{
+        font-size: 15px;
+    }
+}
+/* Отображение на смартфонах */
+@media screen and (max-width: 704px) {
+    .nav-link, .dropdown-item,body{
+        font-size: 12px;
+    }
+    section > h1 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 19px;
+    }
+    #text-pic-block {
+        display: inline-block;
+    }
+/*
+    .tabs li {
+        width: 100%;
+    }
+*/
+    .tabs li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .tabs li a {
+        border-radius: 0;
+        opacity: 1;
+        top: 0;
+    }
+
+
+}

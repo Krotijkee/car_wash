@@ -3,99 +3,43 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=1920px">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
     <!-- Bootstrap CSS -->
     {% load staticfiles %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="{% static 'css/custom-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
       <!-- highslide -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/highslide.css' %}" />
     <!--[if IE 6]>
     <link rel="stylesheet" type="text/css" href="{% static 'css/highslide-ie6.css' %}" />
     <![endif]-->
-    <style>
-        body {
-            height: 100%;
-            position:relative;
-            padding-bottom: 40px;
-        }
-        .footer {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 40px;
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-        .nav-item:hover{
-            background: rgba(0,0,0,0.4)    !important;
-            border: black;
-            border-radius: 10px;
-            margin:0;
-
-        }
-        .dropdown:hover > .dropdown-menu{
-            display: block;
-            margin: 0;
-
-        }
-        .dropdown-menu > a:hover {
-            background: rgba(16,166,166,0.2);
-
-        }
-        .nav-link, .nav-item > a:hover{
-            color:black;
-        }
-        .nav-item{
-            font-size: 100%;
-        }
-
-
-
-
-    </style>
     <title>Автомойка в Томске "Фрегат"</title>
   </head>
-  <body class="" style="">
-        <!-- Вконтакте лого -->
-        <div class="row  big-banner pt-0 mb-0 rounded-0">
-            <div class="colM">
-                <div class="col-12">
-                    <img class="logotip" src="{% static 'images/fregat_logo1.png' %}">
-                </div>
-                <!--
-                <div class="pl-5">
-                    <a href="https://vk.com/public183623649" class="row vk-ico" style="margin-left: 15%">
-                        <img src="{% static 'images/insta_icon.PNG' %}" class="rounded" title="Мы в Instagram">
-                        <p>
-                            <img src="{% static 'images/vk_icon.PNG' %}" class="rounded ml-3" title="Мы Вконтакте">
-                        </p>
-                    </a>
-                </div>
-                -->
-            </div>
+<body>
+    <header class=" rounded-0">
+        <div id="logo">
+            <img src="{% static 'images/fregat_logo1.png' %}" style="">
         </div>
-
-        <!-- navbar menu -->
-        <div class="row bubles navbar navbar-expand-md shadow shadow-normal">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+    </header>
+    <!-- navbar menu -->
+    <div id="navbar" class="row navbar navbar-expand-lg shadow shadow-normal">
+            <button class="navbar-toggler" style="width: 100%; text-align: start" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" style="" id="navbarsExample03">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarsExample03">
                 <ul class="navbar-nav" >
                     <li class="nav-item">
                         <a class="nav-link  rounded-lg"   href="../home"><strong>ГЛАВНАЯ</strong></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link  rounded-lg" data-toggle="collapse"  href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>О КОМПАНИИ</strong></a>
-                        <div class="dropdown-menu rounded-lg" style="background: rgba(0,0,0,0.8)" aria-labelledby="dropdown01">
+                        <ul class="dropdown-menu rounded-lg" style="background: rgba(0,0,0,0.8)" aria-labelledby="dropdown01">
                             <a class="dropdown-item text-white rounded-lg" href="../reviews">ОТЗЫВЫ</a>
                             <a class="dropdown-item text-white rounded-lg" href="../license">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a>
                             <a class="dropdown-item text-white rounded-lg" href="../clients">КОРПОРАТИВНЫМ КЛИЕНТАМ</a>
-                        </div>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link rounded-lg" data-toggle="collapse" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>АВТОМОЙКА</strong></a>
@@ -131,10 +75,8 @@
                 </ul>
             </div>
         </div>
-        <div class="row fon-image">
         {% block content %}
         {% endblock %}
-        </div>
     <!--feedback -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -180,9 +122,9 @@
     </div>
 
     <!--footer-->
-    <footer class="row footer bg-dark text-white">
-        <div class="footer-text d-flex align-items-center ml-3" style="font-size: 12px;">
-            <span class="">© 2019-2021</span>
+    <footer class="row bg-dark text-white">
+        <div class="d-flex align-items-center">
+            <span>© 2019-2021</span>
         </div>
     </footer>
     <!-- Bootstrap JQUERY -->
@@ -202,12 +144,9 @@
     <!-- Инициализация и Ajax-запрос -->
     <script src="{% static 'js/main.js' %}"></script>
     <script src="{% static 'js/review.js' %}"></script>
-    <!-- jQuery для FitText -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="{% static 'js/jquery.fittext.js' %}"></script>
-    <script type="text/javascript">
-        jQuery(".fittext2").fitText(2, { minFontSize: '1px', maxFontSize: '21px' });
-    </script>
-  </body>
 
+    <!-- Вкладки галереи -->
+    <script src="{% static 'js/gallery.js' %}"></script>
+
+</body>
 </html>

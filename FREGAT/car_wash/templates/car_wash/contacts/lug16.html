@@ -1,4 +1,4 @@
-{% extends "car_wash/wrapper.html" %}
+{% extends "car_wash/wrapper_demo.html" %}
 {% block content %}
     <div class="container pt-5 pb-5 text-white" style="width: 100%">
         <div class="container">
@@ -8,43 +8,46 @@
                    <section class="title-section">
                        <h1 class="pb-3 ts">КОНТАКТЫ</h1>
                    <!-- BEGIN BREADCRUMBS-->
-                       <div class="" style="width: 100%">
-                           <ul class="breadcrumb breadcrumb__t shadow shadow-lg opacit" style="font-size: 12px;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">КОНТАКТЫ</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="/contact_1/lug16.html"> ЛУГОВОЙ 16 </a></li></ul>			<!-- END BREADCRUMBS -->
+                       <div style="display: inline-block">
+                           <ul class="breadcrumb breadcrumb__t shadow shadow-lg opacit" style="font-size: 40%;"><li><a href="/home">ГЛАВНАЯ</a></li><li class="divider ml-2">/</li><li class="active ml-2">КОНТАКТЫ</a></li> <li class="divider ml-2">/</li> <li class="ml-2"><a href="/contact_1/lug16.html"> ЛУГОВОЙ 16 </a></li></ul>			<!-- END BREADCRUMBS -->
                        </div>
                    </section><!-- .title-section -->
                </div>
            </div>
         </div>
-        <div class="row pt-5 ">
-            <div class="col-4 ts"><h3 class="mb-5">Контактная информация</h3>
-                <h4>Режим работы</h4>
-                <p style="font-size: 20px">Автомойка работает c 08.00 до 22.00. Любые работы проводятся в удобное для вас время. Вы можете оплатить как наличными так и картой. Для более комфортного ожидания мы приготовили бесплатное кофе,угощение и бесплатный WiFi.
+        <div id="geo" class="row pt-5">
+            <div class="ts" style="max-width: 40%">
+                <h3 class="mb-5">Контактная информация</h3>
+                <h3>Режим работы</h3>
+                <p>Автомойка работает c 08.00 до 22.00. Любые работы проводятся в удобное для вас время. Вы можете оплатить как наличными так и картой. Для более комфортного ожидания мы приготовили бесплатное кофе,угощение и бесплатный WiFi.
                 По любым вопросам мы готовы ответить вам по телефону.<br>
                 Ждем Вас на автомойке "Фрегат".
-                </p><address style="font-size: 20px">
-                <strong >г.Томск<br>
-                пер. Луговой 16<br>
-                <br>
-                    <p style="font-size: 20px;">Телефон: +7 (3822) 23 09 09</p><br>
-                </strong>
-                 <!---
-                    E-mail: <a href=""></a>
-                    -->
+                </p>
+                <address>
+                    <strong>
+                        г.Томск
                     <br>
+                        ул. Сибирская 79б<br>
+                    <br>
+                        <p>Телефон: +7 (3822) 23-09-09</p>
+                    </strong>
+                     <!---
+                        E-mail: <a href=""></a>
+                        -->
                 </address><!-- address (end) -->
             </div>
             <!-- map -->
-            <div class="span8 shadow shadow-lg" >
+            <div id="map_api" class="shadow shadow-lg" style="width: 60%; padding: 5%">
                 {% load staticfiles %}
                 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=abbd4541-99ff-4eb4-86a2-a8e6c8c82f84" type="text/javascript"></script>
                 <script src="{% static 'js/placemark_2.js' %}" type="text/javascript" ></script>
                 <style>
                     #map {
-                        width: 750px; height: 650px;  margin: 0;
+                        max-width: 100%; height: 100%; margin: 0;
                         border: black solid; border-width: medium;
                     }
                 </style>
-            <div id="map"></div>
+                <div id="map"></div>
             </div>
         </div>
 

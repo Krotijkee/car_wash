@@ -1,86 +1,66 @@
-{% extends "car_wash/wrapper.html" %}
+{% extends "car_wash/wrapper_demo.html" %}
 {% block content %}
 {% load staticfiles %}
-    <div class="row pb-5" style="width: 100%">
-        <div class="col-2 ml-4 mr-3 mt-5">
-            <div class="col-12 rounded-lg  mt-3" >
+    <div id="container" class="d-flex justify-content-center">
+        <div id="vkontakte" class="col-2 pr-4" style="margin-top: 5.5%">
                 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 
                 <!-- VK Widget -->
-                <div id="vk_groups"></div>
-                <script type="text/javascript">
-                VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1}, 183623649);
+                <div id="vk_groups" ></div>
+                <script type="text/javascript" style="width: 100%">
+                VK.Widgets.Group("vk_groups", { width: "auto",mode: 3, no_cover: 1}, 183623649);
                 </script>
-            </div>
         </div>
 
-        <div class="col-md-7 mt-5" style="font-size: 17px; margin-left: 30px">
-            <div class="row mb-3 pt-3 shadow shadow-lg">
+        <div id="content-block" style="margin-top: 5% ;">
+            <div class="post shadow shadow-lg" >
+                <em>
+                    <p class="text-white ts" align="justify" style="height:100%;padding: 2%">
+                        <a  class="highslide" style="float:right;width:30%;padding-left: 1%;" href="{% static 'images/home/7.png' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="max-width: 100%;height: auto;border-radius: 10px;float: right" src="{% static 'images/home/thumb/7.jpg' %}">
+                        </a>
 
-                <div class="h_post1"style="height: 22%;max-height: 250px;"></div>
-                <div class="col-7 mt-2" style="position: relative">
-                    <em>
-                        <p class="text-white ts" align="justify" style="">
                         Что ценит любой автовладелец? Комфорт, надежность, техническая составляющая и так далее. И каждый хочет видеть своего железного коня, припаркованного возле дома или офиса, опрятного и с первоначальным блеском. Что не удивительно, ведь внешний вид автомобиля – лицо и гордость его владельца. И специалисты Нашего «автомоечного комплекса» это прекрасно понимают!
-                        </p>
-                    </em>
-                </div>
-                <div class="col-5 pb-3 mt-3" style="position:relative">
-                    <a class="highslide" href="{% static 'images/home/7.png' %}" onclick="return hs.expand(this)">
-                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/7.jpg' %}">
-                    </a>
-                </div>
-            </div>
-            <div class="row mb-3  shadow shadow-lg"  >
-                <div class="h_post1" style="height: 43% ;max-height: 500px;"></div>
-                <div class="col-4 pt-2" style="position: relative">
-                    <div class="pb-1 pt-2">
-                        <a class="highslide" href="{% static 'images/home/5.png' %}" onclick="return hs.expand(this)">
-                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/5.jpg' %}">
-                        </a>
-                    </div>
-                    <div class="pt-5">
-                        <a class="highslide" href="{% static 'images/home/kapot_1.png' %}" onclick="return hs.expand(this)">
-                            <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/kapot_1.png' %}">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-8 pt-3" style="position: relative">
-                    <p class="pr-2 text-white ts" align="justify">
-                        <em>
-                            Команда наших специалистов ликвидируют грязь с любого транспортного средства. В нашем автомоечном центре мойка автомобилей производится аппаратами высокого давления с применением современной авто химии и авто косметики. Мы предоставляем целый комплекс авто услуг, после которых Ваш железный конь буквально засияет от чистоты. Это полировка, помывка двигателя, покрытие кузова автомобиля, его зеркал и стекол специальным защитным материалом.
-                            <br><strong class="text-primary">«Слишком много чести!»</strong> - именно так рассуждает большинство автовладельцев. Но, поверьте, Ваши усилия будут вознаграждены. Ведь чистый двигатель снижает вероятность перегрева. Да и обслужить «сердце» автомобиля (менять моторное масло, воздушные фильтры, свечи зажигания) в чистом виде гораздо приятнее. К тому же, чистый моторный отсек более пожароустойчив.
-                        </em>
+
                     </p>
-                </div>
+                </em>
             </div>
-            <div class="row mb-3 shadow shadow-lg" >
-                <div class="h_post1" style="height: 28% ;max-height: 280px;"></div>
-                <div class="col-7 pt-3" style="position: relative">
-                    <em>
-                        <p class="text-white ts" align="justify">
-                            Не секрет, что кузов – самая дорогостоящая часть автомобиля. Именно поэтому важно понимать, что грязь, имеющая свойство проникать в краску, может подвергнуть автомобиль усиленной коррозии и разрушить его лакокрасочное покрытие. Воспользовавшись услугами нашего центра, вы не только получите бережно вымытый автомобиль, но и приятное обслуживание. С нами Вы поймете, что такое оперативный сервис, качественные услуги и демократичные цены.
-                        </p>
-                    </em>
-                </div>
-                <div class="col-5 pt-4" style="position:relative;">
-                    <a class="highslide" href="{% static 'images/home/lkp.png' %}" onclick="return hs.expand(this)">
-                        <img class="border border-dark" style="width: 100%; border-radius: 10px" src="{% static 'images/home/thumb/lkp.jpg' %}">
-                    </a>
-                </div>
+            <div class="post shadow shadow-lg" style="margin-top: 5.8%" >
+                <em>
+                    <p class="text-white ts" align="justify" style=" padding: 2% 2% 0 2%">
+                        <a class="highslide" style="float:left; width:30%; padding-right: 2%;" href="{% static 'images/home/5.png' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="max-width: 100%;height: auto; border-radius: 10px" src="{% static 'images/home/thumb/5.jpg' %}">
+                        </a>
+                         Команда наших специалистов ликвидируют грязь с любого транспортного средства. В нашем автомоечном центре мойка автомобилей производится аппаратами высокого давления с применением современной авто химии и авто косметики. Мы предоставляем целый комплекс авто услуг, после которых Ваш железный конь буквально засияет от чистоты. Это полировка, помывка двигателя, покрытие кузова автомобиля, его зеркал и стекол специальным защитным материалом.
+
+                    </p>
+                    <p class="text-white ts" align="justify" style="padding: 2% 2% 5% 2%">
+                        <a class="highslide" style="float:right; width:30%; padding-left: 2%;" href="{% static 'images/home/kapot_1.png' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="max-width: 100%;height: auto; border-radius: 10px" src="{% static 'images/home/kapot_1.png' %}">
+                        </a>
+                        «Слишком много чести!» - именно так рассуждает большинство автовладельцев. Но, поверьте, Ваши усилия будут вознаграждены. Ведь чистый двигатель снижает вероятность перегрева. Да и обслужить «сердце» автомобиля (менять моторное масло, воздушные фильтры, свечи зажигания) в чистом виде гораздо приятнее. К тому же, чистый моторный отсек более пожароустойчив.
+                    </p>
+                </em>
+            </div>
+            <div class="post shadow shadow-lg" style="margin-top: 5.8%;margin-bottom: 3.5%">
+                <em>
+                    <p class="text-white ts" align="justify" style="padding: 2%">
+                        <a class="highslide" style="float:right; width:30%; padding-left: 1%;" href="{% static 'images/home/lkp.png' %}" onclick="return hs.expand(this)">
+                            <img class="border border-dark" style="max-width: 100%;height: auto; border-radius: 10px" src="{% static 'images/home/thumb/lkp.jpg' %}">
+                        </a>
+                        Не секрет, что кузов – самая дорогостоящая часть автомобиля. Именно поэтому важно понимать, что грязь, имеющая свойство проникать в краску, может подвергнуть автомобиль усиленной коррозии и разрушить его лакокрасочное покрытие. Воспользовавшись услугами нашего центра, вы не только получите бережно вымытый автомобиль, но и приятное обслуживание. С нами Вы поймете, что такое оперативный сервис, качественные услуги и демократичные цены.
+                    </p>
+                </em>
             </div>
         </div>
-        <div class="col-2 mt-5" style="height: 300px; width: 201px">
-            <div class="row ml-4" style="max-width: 201px; width: 100%">
-                <img class="" src="{% static 'images/actions/ed-bg.png'%}">
+        <div id="giftbox" class="col-2">
+            <div id="giftbox-top" class="">
+                <img  style="width: 100%" src="{% static 'images/actions/ed-bg.png'%}">
             </div>
-            <div class="row ml-4 rbgl d-flex justify-content-center" style=" max-width: 200px;width:100%;height: 100%; max-height: 150px;border-bottom: black ;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px">
-                <div class="row">
-                    <a class="row justify-content-center" href="actions ">
-                        <img src="{% static 'images/act_thumb/discount_sm.jpg' %}" style="height: 65%;margin-top: 15px">
-                    </a>
-                </div>
-
+            <div id="giftbox-bot" class="">
+                <a class="col d-flex justify-content-center" href="actions">
+                    <img src="{% static 'images/act_thumb/discount_sm.jpg' %}">
+                </a>
             </div>
         </div>
     </div>
